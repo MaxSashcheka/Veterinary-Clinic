@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'Comfortaa-Regular';
+    src: url(../fonts/Comfortaa-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Comfortaa-Bold';
+    src: url(../fonts/Comfortaa-Bold.ttf);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    height: 131px;
+}
+
+.logo-image {
+    width: 88.91px;
+    height: 94px;
+    margin-left: 80px;
+}
+
+.logoText {
+    color: #FF9432;
+    font-family: Comfortaa-Regular;
+    font-size: 36px;
+    margin-left: 32px;
+}
+
+.upperCapitalizedText {
+    text-transform: uppercase;
+    font-family: Comfortaa-Bold;
+    margin-top: -30px;
+}
+
+.topNavigationReferences
+{
+    display: flex;
+    /* justify-content:space-between; */
+    list-style-type:none;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.topNavigationReferences li a{
+    display: inline-block;
+    text-align: center;
+    padding-right: 71px;
+    color: black;
+    font-family: Comfortaa-Regular;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.bigImage {
+    position: relative;
+    width: 1440px;
+    height: 893px;
+    background-image: url('../img/dogsBigImage.png');
+}
+
+.dogsImageNested {
+    position: absolute;
+    top: 112px;
+    left: 102px;
+    width: 506px;
+    height: 668px;
+    background-color: white;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dogsImageNestedNested {
+
+    width: 479px;
+    height: 644px;
+    border-radius: 45px;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='45' ry='45' stroke='%23FF9432FF' stroke-width='4' stroke-dasharray='6%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+    border-radius: 45px;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    row-gap: 0px;
+}
+
+.vetClinicLabel {
+    
+    width: 399px;
+    height: 113px;
+
+    color: #FF9432;
+    font-family: Comfortaa-Regular;
+    font-size: 48px;
+    line-height: 54px;
+}
+
+.withCareLabel {
+    width: 377px;
+    height: 90px;
+    color: black;
+    font-family: Comfortaa-Regular;
+    font-size: 36px;
+    line-height: 40px;
+}
+
+.zapNaPriem {
+    width: 398px;
+    height: 54px;
+    background: linear-gradient(90deg, #FF9432 0%, #FFD232 99.99%, rgba(255, 148, 50, 0) 100%, #FFCF24 100%);
+    border-radius: 30px;
+    border-width: 0px;
+
+    font-size: 24px;
+    line-height: 27px;
+    color:white;
+    font-family: Comfortaa-Regular;
+}
+
+.orderCallButton {
+    width: 398px;
+    height: 54px;
+    background: #FFFFFF;
+    border: 2px solid #FF9432;
+    border-radius: 30px;
+
+    font-size: 24px;
+    line-height: 27px;
+    color: #FF9432;;
+    font-family: Comfortaa-Regular;
+}
