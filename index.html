@@ -10,7 +10,7 @@
     <body>
 
         <header>
-            <img class="logo-image" src="img/dogHeader.svg" alt="image not found">
+            <img class="logo-image" src="img/background/dogHeader.svg" alt="image not found">
             <div class="logoText">
                 <p >Super</p>
                 <p class="upperCapitalizedText">pets</p>
@@ -29,20 +29,236 @@
         <div class="bigImage">
             <div class="dogsImageNested">
                 <div class="dogsImageNestedNested">
-
-                    <p class="vetClinicLabel">Ветеринарная клиника</p>
-                    <p class="withCareLabel">С заботой о ваших питомцах</p>
-                    <button class="zapNaPriem">Записаться на прием</button>
+                    <p class="vetClinicLabel">Ветеринарная <br> клиника</p>
+                    <p class="withCareLabel">С заботой <br> о ваших питомцах</p>
+                    <button class="appointmentButton">Записаться на прием</button>
                     <button class="orderCallButton">Заказать звонок</button>
-
-
-
-
-
                 </div>
             </div>
 
         </div>
+
+        <p class="chapterParagraph">Наши услуги</p>
+        <div class="service">
+            <div class="servicesList">
+                <ul>
+                    <li>
+                        <img src="img/services/therapy.svg" alt="not found">
+                        <p>Терапия</p>
+                    </li>
+                    <li>
+                        <img src="img/services/nevrology.svg" alt="not found">
+                        <p>Неврология</p>
+                    </li>
+                    <li>
+                        <img src="img/services/vaccination.svg" alt="not found">
+                        <p>Вакцинация</p>
+                    </li>
+                    <li>
+                        <img src="img/services/laboratory.svg" alt="not found">
+                        <p>Лаборатория</p>
+                    </li>
+                    <li>
+                        <img src="img/services/surgeon.svg" alt="not found">
+                        <p>Хирургия</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class=youTubeVideo>
+            <iframe width="1236" height="697" src="https://www.youtube.com/embed/o31gu4m6DlQ?t=20?showinfo=0" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+
+        <p class="chapterParagraph">Вопросы</p>
+        <div class="questions">
+            <div class="questionsList">
+                <ul>
+                    <li>
+                        <span>Можно ли вызвать ветеринара на дом ?</span>
+                        <img src="img/utilities/addButton.svg" alt="not found">
+                    </li>
+                    <li>
+                        <span>Какие анализы сдать перед приёмом ?</span>
+                        <img src="img/utilities/addButton.svg" alt="not found">
+                    </li>
+                    <li>
+                        <span>Есть ли у вас бесплатная вакцинация ?</span>
+                        <img src="img/utilities/addButton.svg" alt="not found">
+                    </li>
+                    <li>
+                        <span>Вы лечите экзотических животных ?</span>
+                        <img src="img/utilities/addButton.svg" alt="not found">
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="chapterParagraph">Наши специалисты</p>
+        <div class="specialists">
+            <div class="specialistsList">
+                <ul>
+                    <li>
+                        <img src="img/specialists/Anastasia.png" alt="not found">
+                        <p class="specialistNameLabel">Анастасия<br>Ивановна</p>
+                        <p class="positionLabel">Хирург</ыp>
+                    </li>
+                    <li>
+                        <img src="img/specialists/Konstantin.png" alt="not found">
+                        <p class="specialistNameLabel">Константин<br>Водолазов</p>
+                        <p class="positionLabel">Невролог</p>
+                    </li>
+                    <li>
+                        <img src="img/specialists/Victoria.png" alt="not found">
+                        <p class="specialistNameLabel">Виктория<br>Воскресенская</p>
+                        <p class="positionLabel">Терапевт</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="chapterParagraph">Записаться на прием</p>
+        <div class="appointmentOffSet">
+
+            <div class="appoitmentBackground">
+                <div class="appointmentBackgroundDashed">
+                    <input type="text" class="nameInput" placeholder="Имя*">
+                    <input type="text" class="lastNameInput" placeholder="Фамилия*">
+                    <input type="number" class="phoneNumberInput" placeholder="Телефон*">
+
+                    <div class="petPicker">
+                        <p>Ваш питомец*</p>
+
+                        <ul class>
+                            <li>
+                                <input checked type="radio" id="cat" name="pet">
+                                <label for="cat">Кот</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="dog" name="pet">
+                                <label for="dog">Собака</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="rodent" name="pet">
+                                <label for="rodent">Грызун</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="other" name="pet">
+                                <label for="other"></label>
+                                <input type="text" class="otherInput" placeholder="Другое*">
+
+                            </li>
+                            
+                        </ul>
+                    </div>
+
+                    <div class="departmentPicker">
+                        <p>Отделения</p>
+
+                        <ul>
+                            <li>
+                                <input checked type="checkbox" id="therapy">
+                                <label for="therapy">Терапевтическое</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="neurology">
+                                <label for="neurology">Неврологическое</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="vaccination">
+                                <label for="vaccination">Вакцинация</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="laboratory">
+                                <label for="laboratory">Лаборатория</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="surgeon" >
+                                <label for="surgeon">Хирургическое</label>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="datePicker">
+                        <ul>
+                            <li>
+                                <p>Дата приёма*</p>
+                                <input type="date" id="date">
+                            </li>
+                            <li>
+                                <p>Доступное время приёма*</p>
+                                <input type="time" id="time">
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="formButtons">
+                        <button class="recordButton">
+                            <span>Записаться</span>
+                            <img src="img/utilities/buttonHeart.svg" alt="">
+                        </button>
+                        <button class="clearButton">Очистить</button>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="contacts">
+            <p class="chapterParagraph">Контакты</p>
+
+            <div class="container">
+
+                <div class="map">
+                    <img src="img/utilities/heartIcon.svg" alt="no location">
+
+                </div>
+
+                <div class="contactsInfo">
+                    <p class="workingTime">
+                        Режим работы: <br>
+                        пн-пт: 8:00-20:00 <br>
+                        сб-вс: 10:00-18:00
+                    </p>
+                    <p class="referenceNumber">
+                        Телефон справки: <br>
+                        + 375 (29) 123-12-31
+                    </p>
+                    <p class="email">
+                        E-mail <br>
+                        pets@pets.by
+                    </p>
+                    <p class="location">
+                        г.Минск, ул. Солнечная 1, <br>
+                        222222
+                    </p>
+                </div>
+
+
+            </div>
+        </div>
+
+        <footer>
+            <div class="icons">
+                <img src="img/footer/vk.svg" alt="no image">
+                <img src="img/footer/instagram.svg" alt="no image">
+                <img src="img/footer/facebook.svg" alt="no image">
+            </div>
+            <p>Copyright 2020</p>
+        </footer>
+
+
+
+
+
         
 
     </body>

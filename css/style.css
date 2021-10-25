@@ -1,3 +1,5 @@
+/* @import url(default.css); */
+
 @font-face {
     font-family: 'Comfortaa-Regular';
     src: url(../fonts/Comfortaa-Regular.ttf);
@@ -6,6 +8,16 @@
 @font-face {
     font-family: 'Comfortaa-Bold';
     src: url(../fonts/Comfortaa-Bold.ttf);
+}
+
+html {
+    background: rgb(240, 240, 240);
+}
+
+body {
+    margin: auto;
+    max-width: 1440px;
+    background: white;
 }
 
 header {
@@ -36,18 +48,18 @@ header {
 .topNavigationReferences
 {
     display: flex;
-    /* justify-content:space-between; */
+    justify-content:space-between;
     list-style-type:none;
     margin-left: 50px;
     margin-right: 50px;
 }
 
-.topNavigationReferences li a{
+.topNavigationReferences li a {
     display: inline-block;
     text-align: center;
     padding-right: 71px;
     color: black;
-    font-family: Comfortaa-Regular;
+    font-family: Comfortaa-Bold;
     text-decoration: none;
     font-size: 24px;
 }
@@ -56,39 +68,36 @@ header {
     position: relative;
     width: 1440px;
     height: 893px;
-    background-image: url('../img/dogsBigImage.png');
+    background-image: url('../img/background/dogsBigImage.png');
 }
 
 .dogsImageNested {
     position: absolute;
+    
     top: 112px;
     left: 102px;
     width: 506px;
     height: 668px;
     background-color: white;
     border-radius: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .dogsImageNestedNested {
-
+    position: absolute;
     width: 479px;
     height: 644px;
+    top: 12px;
+    left: 12px;
+
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='45' ry='45' stroke='%23FF9432FF' stroke-width='5' stroke-dasharray='6%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
     border-radius: 45px;
-    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='45' ry='45' stroke='%23FF9432FF' stroke-width='4' stroke-dasharray='6%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
-    border-radius: 45px;
-    display: flex;
-    justify-content:center;
-    flex-wrap: wrap;
-    row-gap: 0px;
 }
 
 .vetClinicLabel {
-    
     width: 399px;
     height: 113px;
+    margin-left: 42px;
+    margin-top: 78px;
 
     color: #FF9432;
     font-family: Comfortaa-Regular;
@@ -99,19 +108,24 @@ header {
 .withCareLabel {
     width: 377px;
     height: 90px;
+    margin-left: 42px;
+    margin-top: 53px;
+
     color: black;
     font-family: Comfortaa-Regular;
     font-size: 36px;
     line-height: 40px;
 }
 
-.zapNaPriem {
+.appointmentButton {
     width: 398px;
     height: 54px;
+    margin-left: 42px;
+    margin-top: 74px;
+
     background: linear-gradient(90deg, #FF9432 0%, #FFD232 99.99%, rgba(255, 148, 50, 0) 100%, #FFCF24 100%);
     border-radius: 30px;
     border-width: 0px;
-
     font-size: 24px;
     line-height: 27px;
     color:white;
@@ -121,12 +135,512 @@ header {
 .orderCallButton {
     width: 398px;
     height: 54px;
+    margin-left: 42px;
+    margin-top: 30px;
+
     background: #FFFFFF;
     border: 2px solid #FF9432;
     border-radius: 30px;
-
     font-size: 24px;
     line-height: 27px;
     color: #FF9432;;
     font-family: Comfortaa-Regular;
 }
+
+.service {
+    margin-top: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+p.chapterParagraph {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    font-family: Comfortaa-Regular;
+    font-size: 48px;
+}
+
+p.chapterParagraph::before {
+    width: 58px;
+    height: 3px;
+    content: '';
+    display: inline-block;
+    background-color: #FF9432;
+    margin-right: 28px;
+}
+
+p.chapterParagraph::after {
+    width: 58px;
+    height: 3px;
+    content: '';
+    display: inline-block;
+    background-color: #FF9432;
+    margin-left: 28px;
+}
+
+p.chapterParagraph, p.chapterParagraph::before, p.chapterParagraph::after {
+    align-items: center;
+}
+
+.servicesList {
+    width: 1161px;
+    height: 250px;
+    margin: auto;
+}
+
+.servicesList ul {
+    display: flex;
+    justify-content:space-between;
+}
+
+.servicesList ul li{
+    text-align: center;  
+    list-style-type:none;
+}
+
+.servicesList ul li img{
+    width: 100px;
+    height: 150px;    
+}
+
+.servicesList ul li p{
+    color: black;
+    margin-top: 40px;
+    font-family: Comfortaa-Bold;
+    font-size: 24px;
+    line-height: 27px;
+}
+
+.youTubeVideo {
+    margin-top: 30px;
+    margin-left: 102px;
+}
+
+.questions {
+    margin-top: 54px;
+    text-align: left;
+    align-items: center;
+}
+
+
+.questionsList {
+    width: 1000px;
+    height: 300px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.questionsList ul li{
+    list-style-type:none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 49px;
+}
+
+.questionsList ul li img{
+    width: 34px;
+    height: 34px;    
+}
+
+.questionsList ul li span {
+    color: black;
+    font-family: Comfortaa-Regular;
+    font-size: 36px;
+    line-height: 27px;
+}
+
+.specialists {
+    margin-top: 100px;
+    text-align: left;
+    align-items: center;
+}
+
+
+.specialistsList {
+    width: 1000px;
+    height: 520px;
+    margin: auto;
+    margin-top: -50px;
+}
+
+.specialistsList ul {
+    display: flex;
+    justify-content:space-between;
+}
+
+.specialistsList ul li{
+    text-align: center;  
+    list-style-type:none;
+}
+
+.specialistsList ul li img{
+    width: 278px;
+    height: 278px;    
+}
+
+.specialistNameLabel {
+    color: black;
+    margin-top: 49px;
+    font-family: Comfortaa-Bold;
+    font-size: 36px;
+    line-height: 40px;
+}
+
+.positionLabel {
+    color: black;
+    font-family: Comfortaa-Regular;
+    font-size: 36px;
+    line-height: 40px;
+}
+
+.appointmentOffSet {
+    text-align: left;
+    align-items: center;
+}
+
+
+.appoitmentBackground {
+    position: relative;
+    border-radius: 50px;
+    margin: auto;
+    width: 1236px;
+    height: 1450px;
+    background: #FFF9F3;
+    margin-bottom: -40px;
+}
+
+.appointmentBackgroundDashed {
+    position: absolute;
+    width: 1198px;
+    height: 1402px;
+    top: 24px;
+    left: 19px;
+
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='45' ry='45' stroke='%23FF9432FF' stroke-width='5' stroke-dasharray='6%2c 14' stroke-dashoffset='10' stroke-linecap='square'/%3e%3c/svg%3e");
+    border-radius: 45px;
+}
+
+.nameInput {
+    width: 1022px;
+    height: 73px;
+    margin-top: 114px;
+    margin-left: 68px;
+    margin-right: 68px;
+    padding-left: 40px;
+    background: white;
+    border-radius: 10px;
+    border-width: 0px;
+
+    font-family: Comfortaa-Regular;
+    font-size: 36px;
+    line-height: 40px;
+}
+
+.lastNameInput {
+    width: 1022px;
+    height: 73px;
+    margin-top: 58px;
+    margin-left: 68px;
+    margin-right: 68px;
+    padding-left: 40px;
+    background: white;
+    border-radius: 10px;
+    border-width: 0px;
+
+    font-family: Comfortaa-Regular;
+    font-size: 36px;
+    line-height: 40px;
+}
+
+.phoneNumberInput {
+    width: 1022px;
+    height: 73px;
+    margin-top: 58px;
+    margin-left: 68px;
+    margin-right: 68px;
+    padding-left: 40px;
+    background: white;
+    border-radius: 10px;
+    border-width: 0px;
+
+    font-family: Comfortaa-Regular;
+    font-size: 36px;
+    line-height: 40px;
+}
+
+.petPicker {
+    margin-top: 58px;
+    margin-left: 68px;
+    font-family: Comfortaa-Regular;
+    font-size: 36px;
+    text-align: left;
+}
+
+.petPicker ul {
+    list-style-type: none;
+    columns: 2;
+}
+
+.petPicker ul li {
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+.petPicker ul li input[type=radio] {
+    display: none;
+}
+
+.petPicker ul li label::before {
+    width: 34px;
+    height: 34px;
+    border: 2px solid #000000;
+    border-radius: 17px;
+    margin-right: 28px;
+    display: inline-block;
+    content: '';
+    box-sizing: border-box;    
+    
+    transform: translate(0%, 15%);
+}
+
+
+input[type=radio]:checked+label::before {
+    background-image: url(../img/utilities/radioDot.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+} 
+
+.otherInput {
+    width: 369px;
+    height: 48px;
+    margin-left: -10px;
+    padding-left: 15px;
+    
+    background: white;
+    border-radius: 10px;
+    border-width: 0px;
+
+    font-family: Comfortaa-Regular;
+    font-size: 36px;
+    line-height: 40px;
+}
+
+
+.departmentPicker {
+    margin-top: 58px;
+    margin-left: 68px;
+    font-family: Comfortaa-Regular;
+    font-size: 36px;
+    text-align: left;
+}
+
+.departmentPicker ul {
+    list-style-type: none;
+    columns: 2;
+}
+
+.departmentPicker ul li {
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+.departmentPicker ul li input[type=checkbox] {
+    display: none;
+}
+
+.departmentPicker ul li label::before {
+    content: '';
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    border: 2px solid #000000;
+    box-sizing: border-box;    
+    margin-right: 32px;
+    transform: translate(0%, 15%);
+}
+
+input[type=checkbox]:checked+label::before {
+    background-image: url(../img/utilities/checkboxCheckMark.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+} 
+
+.datePicker {
+    width: 1060px;
+    height: 150px;
+    margin-top: 60px;
+    margin-left: 68px;
+
+    font-family: Comfortaa-Bold;
+    font-size: 36px;
+    line-height: 27px;
+}
+
+.datePicker ul {
+    display: flex;
+    justify-content:space-between;
+    padding-left: 0px;
+}
+
+.datePicker ul li{
+    text-align: left;  
+    list-style-type:none;
+    display: absolute;
+}
+
+.datePicker p {
+    margin-top: 0px;
+}
+
+.datePicker ul li input[type="date"] {
+    width: 349px;
+    height: 50px;
+    border-radius: 10px;
+    border-width: 0px;
+    padding-left: 15px;
+    background: white;
+
+    font-family: Comfortaa-Regular;
+    font-size: 36px;
+}
+
+.datePicker ul li input[type="time"] {
+    width: 349px;
+    height: 50px;
+    border-radius: 10px;
+    border-width: 0px;
+    padding-left: 15px;
+    background: white;
+
+    font-family: Comfortaa-Regular;
+    font-size: 36px;
+}
+
+
+.formButtons {
+    width: 800px;
+    height: 160px;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.formButtons button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    font-family: Comfortaa-Bold;
+    font-size: 36px;
+    border-radius: 48px;
+}
+
+.recordButton {
+    width: 410px;
+    height: 96px;
+    background: linear-gradient(90deg, #FF9432 0%, #FFCF24 100.09%);
+    text-align: center;
+    color: white;
+    border: 0px;
+}
+
+.clearButton { 
+    width: 292px;
+    height: 96px;
+    
+    background: #FFFFFF;
+    border: 3px solid #FF9432;
+    color: #FF9432;
+}
+
+.contacts {
+    margin-top: 100px;
+}
+
+.container {
+    display: inline-flex;
+    width: 1440px;
+    height: 852px;
+}
+
+.map {
+    width: 852px;
+    height: 852px;
+    background-image: url(../img/utilities/map.png);
+}
+
+.map img {
+    width: 130px;
+    height: 130px;
+    margin-top: 290px;
+    margin-left: 524px;
+}
+
+.contactsInfo {
+    width: 588px;
+    height: 852px;
+    background: #FF9432;
+
+    font-family: Comfortaa-Bold;
+    font-size: 36px;
+    line-height: 40px;
+    color: white;
+}
+
+.workingTime {
+    margin-top: 106px;
+    margin-left: 51px;
+}
+
+.referenceNumber {
+    margin-top: 84px;
+    margin-left: 51px;
+}
+
+.email {
+    margin-top: 84px;
+    margin-left: 51px;
+}
+
+.location {
+    margin-top: 84px;
+    margin-left: 51px;
+}
+
+footer {
+    width: 1440px;
+    height: 157px;
+    background: #864000;
+}
+
+footer div.icons {
+    margin: auto;
+    padding-top: 61px;
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+}
+
+footer div.icons img {
+    width: 40px;
+    height: 40px;
+}
+
+footer p {
+    margin-left: 650px;
+    padding-top: 5px;
+    font-size: 18px;
+    line-height: 20px;
+    color: white;
+    font-family: Comfortaa-Bold;
+}
+
+
+
+
+
+
