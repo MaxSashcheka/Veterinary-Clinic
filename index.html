@@ -16,12 +16,12 @@
                 <p class="upperCapitalizedText">pets</p>
             </div>
             <nav>
-                <ul class="topNavigationReferences">
-                    <li><a href="">Услуги</a></li>
-                    <li><a href="">Обзор</a></li>
-                    <li><a href="">Вопросы</a></li>
-                    <li><a href="">Персонал</a></li>
-                    <li><a href="">Контакты</a></li>
+                <ul>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#overview">Обзор</a></li>
+                    <li><a href="#questions">Вопросы</a></li>
+                    <li><a href="#staff">Персонал</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
                 </ul>
             </nav>
         </header>
@@ -38,6 +38,7 @@
 
         </div>
 
+        <a id="services"></a>
         <p class="chapterParagraph">Наши услуги</p>
         <div class="service">
             <div class="servicesList">
@@ -66,6 +67,7 @@
             </div>
         </div>
 
+        <a id="overview"></a>
         <div class=youTubeVideo>
             <iframe width="1236" height="697" src="https://www.youtube.com/embed/o31gu4m6DlQ?t=20?showinfo=0" title="YouTube video player"
             frameborder="0"
@@ -73,6 +75,7 @@
             allowfullscreen></iframe>
         </div>
 
+        <a id="questions"></a>
         <p class="chapterParagraph">Вопросы</p>
         <div class="questions">
             <div class="questionsList">
@@ -97,6 +100,7 @@
             </div>
         </div>
 
+        <a id="staff"></a>
         <p class="chapterParagraph">Наши специалисты</p>
         <div class="specialists">
             <div class="specialistsList">
@@ -203,25 +207,18 @@
                         <button class="clearButton">Очистить</button>
 
                     </div>
-
-
                 </div>
-
-
             </div>
-
         </div>
 
+        <a id="contacts"></a>
         <div class="contacts">
             <p class="chapterParagraph">Контакты</p>
-
             <div class="container">
-
                 <div class="map">
                     <img src="img/utilities/heartIcon.svg" alt="no location">
 
                 </div>
-
                 <div class="contactsInfo">
                     <p class="workingTime">
                         Режим работы: <br>
@@ -242,7 +239,6 @@
                     </p>
                 </div>
 
-
             </div>
         </div>
 
@@ -255,11 +251,20 @@
             <p>Copyright 2020</p>
         </footer>
 
+        <div class="box">
+            <a class="button" href="#popup1">Let me Pop up</a>
+        </div>
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                <h2>Here i am</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    Thank to pop me out of that button, but now i'm done so you can close this window.
+                </div>
+            </div>
+        </div>
 
 
-
-
-        
 
     </body>
 </html>
