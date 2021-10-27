@@ -43,7 +43,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: red;
+    color: #FF9432;
 }
 
 .logo-image {
@@ -502,7 +502,7 @@ input[type=checkbox]:checked+label::before {
     font-size: 36px;
 }
 
-.datePicker ul li input[type="time"] {
+.datePicker ul li select {
     width: 349px;
     height: 50px;
     border-radius: 10px;
@@ -626,6 +626,10 @@ footer div.icons img {
     height: 40px;
 }
 
+footer div.icons img:hover {
+    fill: blue;
+}
+
 footer p {
     margin-left: 650px;
     padding-top: 5px;
@@ -636,60 +640,125 @@ footer p {
 }
 
 
-.overlay {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.7);
-  transition: opacity 500ms;
-  visibility: hidden;
-  opacity: 0;
-}
-.overlay:target {
-  visibility: visible;
-  opacity: 1;
+.popup-bg {
+    width: 100%; 
+    height: 100%;
+    top: 0; 
+    left: 0; 
+
+    position: fixed; 
+    background: rgba(0,0,0,0.75);
+    display: none;
 }
 
 .popup {
-  margin: 70px auto;
-  padding: 20px;
-  background: #fff;
-  border-radius: 5px;
-  width: 30%;
-  position: relative;
-  transition: all 5s ease-in-out;
+    width: 820px;
+    height: 800px;
+    left: 50%;
+    top: 50%;
+    border-radius: 50px;
+
+    position: absolute;
+    background: #ffffff;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-family: Comfortaa-Regular;
 }
 
-.popup h2 {
-  margin-top: 0;
-  color: #333;
-  font-family: Tahoma, Arial, sans-serif;
-}
-.popup .close {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  transition: all 200ms;
-  font-size: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #333;
-}
-.popup .close:hover {
-  color: #06D85F;
-}
-.popup .content {
-  max-height: 30%;
-  overflow: auto;
+.no-scroll {
+    overflow-y: hidden;
 }
 
-@media screen and (max-width: 700px){
-  .box{
-    width: 70%;
-  }
-  .popup{
-    width: 70%;
-  }
+.popup-border {
+    background: url(../img/background/popup-dashed.svg);
+    background-repeat: no-repeat;
+
+    /* width: 790px;
+    height: 760px; */
+    width: 820px;
+    height: 800px;
+    margin-top: 25px;
+    margin-left: 12px;
+ 
+}
+
+.popupHeader {
+    font-size: 36px;
+    color: #FF9532;
+    display: flex;
+    justify-content: center;
+}
+
+.popupHeader p{
+    display: flex;
+    font-size: 36px;
+    color: #FF9532;
+    font-family: Comfortaa-Bold;
+
+}
+
+.popupHeader img{
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    top: 55px;
+    right: 45px;
+    cursor: pointer;
+}
+
+.popupInputText {
+    margin-top: -25px;
+    display: inline-block;
+}
+
+.popupInputText li {
+    display: block;
+    justify-content: left;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.popupInputText li input{
+    width: 700px;
+    height: 85px;
+
+    border: 2px solid #FF9432;
+    background: #FFF9F3;
+    border-radius: 50px;
+    
+    padding-left: 25px;
+    margin-top: 10px;
+
+    font-family: Comfortaa-Regular;
+    font-size: 30px;
+    color: black;
+}
+
+.popupInputText li:last-child input {
+    height: 172px ;
+}
+
+.orderCall {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.orderCall button {
+    width: 290px;
+    height: 70px;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 0px;
+    background: linear-gradient(90deg, #FF9432 0%, #FFD232 100%);
+    border-radius: 50px;
+
+    font-family: Comfortaa-Bold;
+    font-size: 24px;
+    color: #F4F5FF;
 }
